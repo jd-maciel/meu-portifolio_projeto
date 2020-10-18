@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+
+
+
+body{
+    background: radial-gradient(circle at 30% 107%, #ca925d 5%,  rgb(153, 119, 180) 60%, rgb(128, 175, 197) 90%);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+a:link{
+    color:  rgb(241, 241, 241); /*para nao mudar a cor do link precisa add os 4 estados, estado 1 */
+    /* text-decoration: none;  --- para nao ter decoraçao nenhuma no link*/ 
+    text-decoration: none; 
+}
+
+a:visited{
+    color:  rgb(255, 255, 255); /*para nao mudar a cor do link precisa add os 4 estados, estado 2  */
+    text-decoration: none; 
+}
+
+a:active{
+    color:  rgb(255, 255, 255); /*para nao mudar a cor do link precisa add os 4 estados, estado 3  */
+    text-decoration: none; 
+}
+
+a:hover{
+    color:  rgb(255, 255, 255); /*para nao mudar a cor do link precisa add os 4 estados, estado 4  */
+    text-decoration: none; 
+}
+
+                    /* ICONS - SOCIAL - COMEÇO */
+
+.social-icons{
+    position: absolute;
+    left: -64px;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(20, 89, 238, 0.342); 
+        
+    font-size: 28px;
+    
+    /* PARA CENTRALIZAR OBJETOS ..... */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* PARA CENTRALIZAR OBJETOS ..... FIM */
+    
+    transition: 0.2s;  /* suavizar o efeito quando o mouse passar por cima, nunca usar virgula, sempre ponto */
+}
+
+.social-icons:hover{ /*quando o mouse passar o icone do face ou whats vai aumentar */
+    width: 65px;
+    height: 65px;
+    /*quando o mouse passar o icone do face ou whats vai aumentar ..... FIM */
+
+    border-radius: 100%;  /*para deixar o objeto redondo quando o mouse passar */
+
+    /* transform: rotate(20deg);   para girar o objeto, sempre usar a notação em graus, se quizer girar para o outro lado basta por o graus em negativo, -10deg */
+
+    /* border-top-right-radius:   PARA ARENDONDAR SOMENTE A BORDAS DE CIMA  */
+}
+
+#social-facebook{
+    /* color:  rgb(255, 255, 255); */
+    background-color: #3b5898;   
+}
+
+#social-insta{
+    background: #d6249e;
+    background: radial-gradient(circle at 30% 107%, rgb(63, 0, 165), rgb(184, 0, 153), rgb(255, 255, 0));
+    /* box-shadow: 0px 3px 10px rgba(0,0,0,.25); */
+    top: 64px;
+}
+
+#social-linked{    
+    background-color: #0077B5; 
+    top: 128px;  
+}
+
+#social-whats{    
+    color: #ffffff;
+    background-color: #34af23; 
+    top: 192px; 
+}
+
+                    /* ICONS - SOCIAL - FIM */
+
+#conteudo{
+    position: absolute;
+    top: 5%;
+    left: 15%;    
+    width: 75%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); 
+  
+}
+
+#foto{
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 200px;
+    background-image: url(../images/foto-perfil.png);
+    background-size: 100%;    
+    background-repeat: no-repeat;
+        
+}
+
+#menus{
+    position: relative;
+    float: right;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0);
+
+   
+}
+
+/* #ca925d,  rgb(153, 119, 180) 60%, rgb(128, 175, 197) */
+
+
+#nome{
+    position: relative;
+    float: right;
+    width: 60%;
+    height: 100px;
+    background-color:  rgb(99, 163, 196);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+
+    /* PARA CENTRALIZAR OBJETOS ..... */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* PARA CENTRALIZAR OBJETOS ..... FIM */
+
+}
+
+#curriculo{
+    position: relative;
+    float: right;
+    width: 40%;
+    height: 100px;
+    background-color: rgb(230, 245, 20);
+
+    background-color:  rgb(28, 137, 187);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+
+    /* PARA CENTRALIZAR OBJETOS ..... */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* PARA CENTRALIZAR OBJETOS ..... FIM */
+}
+
+
+#menu0{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 20%;
+    height: 100px;
+    background-color: rgba(129, 129, 129, 0);
+
+}
+
+.icon-perfil{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    font-size: 40px;
+}  
+
+#perfil a{
+    color: #000000;
+}
+
+#menu1{
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    width: 20%;
+    height: 100px;
+    background-color:  #757575;
+    
+}
+
+#menu2{
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    width: 20%;
+    height: 100px;
+    background-color: rgb(153, 119, 180);
+}
+
+#menu3{
+    position: absolute;
+    top: 100px;
+    left: 60%;
+    width: 20%;
+    height: 100px;
+    background-color: rgb(72, 44, 105);
+}
+
+#menu4{
+    position: absolute;
+    top: 100px;
+    left: 80%;
+    width: 20%;
+    height: 100px;
+    background-color: rgb(236, 141, 17);
+}
+
+#welcome{
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    
+    height: 350px;
+    background-color: rgba(0, 0, 255, 0);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    background-color: rgba(189, 184, 184, 0.151); 
+   
+    border: #ffffff00 50px solid ;
+    z-index: 100;
+    border-radius: 10%; 
+
+
+    
+}
+
+/*
+#qualificacoes{
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(104, 104, 104, 0.432);
+} 
+
+
+#rodape{
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    
+    height: 200px;
+    background-color: black;
+
+    border: #d31f1ff5 50px solid ;
+    z-index: 100;
+    border-radius: 10%; 
+}
+
+*/
+
